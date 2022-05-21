@@ -1,9 +1,217 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 :root{
     font-family: 'Poppins', sans-serif;
+    --gradient-sec: linear-gradient(90deg,#111c58 0,#5c2782 51%,#111c58);
 }
+*, :after{
+    box-sizing: border-box;
+}
+
 body{
-    background-color: black;
+    margin: 0%;
+}
+
+nav {
+    color: whitesmoke;
+}
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu_items{
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu_items li{
+    list-style: none;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+button{
+    border: 0px;
+    font-size: medium;
+    font-weight: 600;
+    padding:15px 20px;
+}
+.btn{
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 0%;
+    border-top-right-radius:1.5rem;
+    background-image: linear-gradient(90deg, #ef146e, #fea958 51%, #ef146e);
+    background-size: 200%;
+    transition: all .5s;
+    cursor: pointer;
+}
+.btn:hover{
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 01.5rem;
+    border-top-right-radius:0%;
+}
+
+.head{
+    position: relative;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 120%;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headings{
     color: aliceblue;
+}
+.headings img{
+    width: 100%;
+}
+.headings h6{
+    font-size: 1.2rem;
+    color: #fea958;
+    margin: 0;
+}
+.headings h1{
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.headings #paragraph{
+    margin-top: 0;
+}
+.service_container{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+title{
     text-align: center;
 }
+.service{
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+.service:hover{
+    box-shadow:0 0 10px 4px rgba(23, 25, 107, 0.166);
+}
+.service:hover .fa-solid{
+    color: aliceblue;
+    background-color: #122487;
+    border: 2px solid #122487;
+}
+.service .fa-solid{
+    padding: 10px;
+    color: #ef146e;
+    border: 2px solid #ef146e;
+    display: inline-block;
+    border-radius: 50%;
+}
+.title{
+    margin-bottom: 16px;
+    font-size:1.5rem;
+    text-align: center;
+}
+.title h1{
+    margin-bottom: 0px;
+}
+.empty .empty-1{
+    display: inline-block;
+    border-radius: 50px;
+    width: 50px;
+    height: 5px;
+    background-image: linear-gradient(90deg, #ef146e, #fea958 51%);
+    background-size: 200%;
+}
+.empty .empty-2{
+    display: inline-block;
+    border-radius: 50px;
+    width: 150px;
+    height: 5px;
+    background-image: linear-gradient(90deg, #ef146e, #fea958 51%);
+    background-size: 200%;
+}
+.agency_container{
+    width: 80%;
+    margin: auto;
+}
+.agency_info{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+}
+.agency_title{
+    margin-bottom: 0px;
+    font-size: 2.5rem;
+}
+.agency_num{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+}
+.agency_num div{
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 4px rgba(23, 25, 107, 0.166);
+}
+.agency_num h1{
+    font-size: 2rem;
+    margin: 0px;
+}
+.agency_num p{
+    margin: 0px;
+}
+
+.features_container{
+    width: 80%;
+    margin: auto;
+}
+.features_title h1{
+    font-size: 2.5rem;
+    margin-bottom: 0px;
+}
+.features_title{
+    text-align: center;
+}
+.features{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.fa-bezier-curve{
+    font-size: 1.5rem;
+    color: aliceblue;
+    padding: 30px;
+    border-radius: 50%;
+    background-image: linear-gradient(90deg,#111c58 0,#ef146e);
+    background-size: 200%;
+}
+
+.feature{
+    display: flex;
+    flex-direction: row;
+}
+.feature_info{
+    margin-left: 15px;
+}
+.feature_title{
+    margin: 0px;
+}
+
