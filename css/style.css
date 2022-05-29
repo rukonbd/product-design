@@ -14,10 +14,25 @@ body{
 nav {
     color: whitesmoke;
 }
+#nav_icon{
+    background-color: #412087;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#nav_icon .icon{
+width: 25px;
+height: 3px;
+padding: 0px;
+margin: 5px;
+background-color: aliceblue;
+}
 #navbar {
+    width: 80%;
+    margin: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 .menu_items{
@@ -193,6 +208,7 @@ title{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
+    justify-items: center;
 }
 
 .fa-bezier-curve{
@@ -204,6 +220,8 @@ title{
     background-size: 200%;
 }
 
+
+
 .feature{
     display: flex;
     flex-direction: row;
@@ -214,4 +232,105 @@ title{
 .feature_title{
     margin: 0px;
 }
+
+/* Media quary */
+
+@media screen and (max-width:1024px) {
+    .features{
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+    }
+
+    .two_feature{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+}
+@media screen and (max-width:780px) {
+    .container{
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .service_container{
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+    .agency_info{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 20px;
+    }
+    .features{
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+    }
+    .headings h1{
+        
+        margin: 0;
+    }
+    /* #navbar {
+        display: none;
+        
+    } */
+}
+
+@media screen and (max-width:480px) {
+    .container{
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .service_container{
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+    .agency_info{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 20px;
+    }
+    .two_feature{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .features{
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+    }
+    .headings h1{
+        
+        margin: 0;
+    }
+    #menu {
+        display: none;
+        
+    }
+}
+
+
+
 
